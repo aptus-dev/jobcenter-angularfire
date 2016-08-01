@@ -1,5 +1,5 @@
 <!-- page container -->
-<div class="page-container" >
+<div class="page-container">
 
     <!-- page header -->
     <div class="page-header">
@@ -23,28 +23,26 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a ui-sref="contact-us">Hubungi Kami</a></li>
                         <li class="dropdown dropdown-lang mr-5">
-                            <a class="btn-link font2" data-toggle="dropdown" aria-expanded="false"> 
+                            <a class="btn-link font2" data-toggle="dropdown" aria-expanded="false">
                                 <img alt="JobCenter - ID" class="svg-flag mr-5" height="25" src="../img/indo.jpg" width="25">
                                 <span class="caret"></span>
                             </a>
-                            <ul class="dropdown-menu with-arrow-v2-right-language pull-right" style="background-color:#e7e7e7" role="menu"> 
+                            <ul class="dropdown-menu with-arrow-v2-right-language pull-right" style="background-color:#e7e7e7" role="menu">
                                 <li>
-                                <a ui-sref="home-en" rel="nofollow">
-                                    <img alt="JobCenter - EN" class="svg-flag mr-5" height="25" src="../img/USA_flag.jpg" width="25">
-                                    English
-                                </a>
-                                </li>
-                                <li class="disabled"> 
-                                    <a ui-sref="home" rel="nofollow">
-                                        <img alt="JobCenter - ID" class="svg-flag mr-5" height="25" src="../img/indo.jpg" width="25">
-                                        Indonesia
+                                    <a ui-sref="home-en" rel="nofollow">
+                                        <img alt="JobCenter - EN" class="svg-flag mr-5" height="25" src="../img/USA_flag.jpg" width="25">                                        English
                                     </a>
-                                    </li>
+                                </li>
+                                <li class="disabled">
+                                    <a ui-sref="home" rel="nofollow">
+                                        <img alt="JobCenter - ID" class="svg-flag mr-5" height="25" src="../img/indo.jpg" width="25">                                        Indonesia
+                                    </a>
+                                </li>
                             </ul>
                         </li>
-                       
-                             
-                            
+
+
+
                         <!--<li><a ui-sref="search">Cari Pekerja</a></li>-->
                     </ul>
 
@@ -107,9 +105,9 @@
             </div>
         </div>
         <!-- ./carousel -->
-        
+
         <!-- Icon Category -->
-        <div class="page-content-wrap bg-img-1" id="tipe">            
+        <div class="page-content-wrap bg-img-1" id="tipe">
             <div class="page-content-holder">
                 <div class="block-heading block-heading-centralized">
                     <h1 class="heading-underline">Cari Pekerja Berdasarkan Kategori</h1>
@@ -246,7 +244,7 @@
             <!-- ./page content holder -->
         </div>
         <!-- ./Icon Category -->
-        
+
         <!-- Filter and Results -->
         <div class="page-content-wrap bg-texture-1 bg-light dark-elements">
             <div class="page-content-wrap">
@@ -255,43 +253,44 @@
                     <div class="box"><span class="fa fa-angle-down"></span></div>
 
                 </div>
-                                                
+
                 <div class="page-content-holder" id="search">
                     <!-- LOKASI -->
                     <div class="text-center">
-                    <h3>Anda Mencari: <span ng-model="input.profesi" style="color:#00003B">{{input.profesi}}</span></h3>                       
-                    <h1 class="heading-underline">Dimanakah Anda Berada?</h1>
-                    <select class="btn" style="background-color: #353831; border-color: #00003B; color: #FFFF03; padding:12px; font-size:20px" 
-                        ng-model="input.lokasi">
+                        <h3>Anda Mencari: <span ng-model="input.profesi" style="color:#00003B">{{input.profesi}}</span></h3>
+                        <h1 class="heading-underline">Dimanakah Anda Berada?</h1>
+                        <select class="btn" style="background-color: #353831; border-color: #00003B; color: #FFFF03; padding:12px; font-size:20px"
+                            ng-model="input.lokasi">
                     <option value="">Pilih Lokasi Anda</option>
                     <option ng-repeat="branch in branches">{{branch.kotamadya}}</option>
                 </select>
-                </div>
-                <br>
+                    </div>
+                    <br>
 
-                <!-- filter -->
-                <div class="container">
-                    <a ng-model="collapsed" ng-click="collapsed=!collapsed" href="">
-                        
-                  <h4 class="text-left"><span class="fa fa-chevron-down"></span> Advanced Filter:</h4></a>
-                    <div class="well" style="max-height: 400px;overflow: auto;" ng-show="collapsed">
-                        <div class="col-md-2">
-                            <div class="form-group">
-                              <label>
+                    <!-- filter -->
+                    <div class="container">
+                        <a ng-model="collapsed" ng-click="collapsed=!collapsed" href="">
+
+                            <h4 class="text-left"><span class="fa fa-chevron-down"></span> Advanced Filter:</h4>
+                        </a>
+                        <div class="well" style="max-height: 400px;overflow: auto;" ng-show="collapsed">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>
                                 <input type="checkbox" ng-model="isi.value1" ng-true-value="'Infal / Cuci-gosok'" ng-false-value="" >
                                     Infal / Cuci-gosok  &nbsp</label>
-                              <label>
+                                    <label>
                                 <input type="checkbox" ng-model="isi.value2" ng-true-value="'Pembantu (Full-time)'" ng-false-value="">
                                     Pembantu (Full-time)  &nbsp</label>
-                              <label>
+                                    <label>
                                 <input type="checkbox" ng-model="isi.value3" ng-true-value="'Tukang Kebun'" ng-false-value="">
                                     Tukang Kebun &nbsp</label>
-                              <label>
+                                    <label>
                                 <input type="checkbox" ng-model="isi.value4" ng-true-value="'Penjaga Binatang Peliharaan'" ng-false-value="">
                                     Penjaga Binatang Peliharaan  &nbsp</label>
-                              <label><input type="checkbox" ng-model="isi.value9" ng-true-value="'Satpam'" ng-false-value="">
+                                    <label><input type="checkbox" ng-model="isi.value9" ng-true-value="'Satpam'" ng-false-value="">
                                     Satpam  &nbsp</label>
-                                <!--<select class="form-control" id="profesi" >
+                                    <!--<select class="form-control" id="profesi" >
                                   <option value="">Pekerjaan yang Diminati</option>
                                   <option>Infal / Cuci-gosok</option>
                                   <option>Pembantu (Full-time)</option>
@@ -304,39 +303,39 @@
                                   <option>Satpam</option>
                                   <option>Pekerja Umum</option>
                               </select>-->
-                            </div>                                                                                                                                      
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-group">
-                            <label>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>
                               <input type="checkbox" ng-model="isi.value5" ng-true-value="'Sopir'" ng-false-value="">
                                   Sopir  &nbsp</label>
-                            <label>
+                                    <label>
                               <input type="checkbox" ng-model="isi.value6" ng-true-value="'Tukang / Maintenance'" ng-false-value="">
                                   Tukang / Maintenance</label>
-                            <label><input type="checkbox" ng-model="isi.value7" ng-true-value="'Baby Sitter'" ng-false-value="">
+                                    <label><input type="checkbox" ng-model="isi.value7" ng-true-value="'Baby Sitter'" ng-false-value="">
                                 Baby Sitter  &nbsp</label>
-                            <label><input type="checkbox" ng-model="isi.value8" ng-true-value="'Nanny / Perawat Orang Sakit'" ng-false-value="">
+                                    <label><input type="checkbox" ng-model="isi.value8" ng-true-value="'Nanny / Perawat Orang Sakit'" ng-false-value="">
                                 Nanny / Perawat Orang Sakit  &nbsp</label>
-                            <label><input type="checkbox" ng-model="isi.value10" ng-true-value="'Pekerja Umum'" ng-false-value="">
-                                Pekerja Umum  &nbsp</label> 
-                          </div>                                                                                    
-                        </div>
+                                    <label><input type="checkbox" ng-model="isi.value10" ng-true-value="'Pekerja Umum'" ng-false-value="">
+                                Pekerja Umum  &nbsp</label>
+                                </div>
+                            </div>
 
-                                                   
-                        
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <!--<label for="sel2">Status:</label>-->
-                                <select class="form-control" id="status" ng-model="input.status">
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <!--<label for="sel2">Status:</label>-->
+                                    <select class="form-control" id="status" ng-model="input.status">
                                 <option value="">Status</option>
                                 <option>Lajang</option>
                                 <option>Menikah</option>
                                 <option>Janda / Duda</option>
                             </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control" id="gajimin" ng-model="min">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="gajimin" ng-model="min">
                                     <option value="">Gaji Bulanan(min)</option>
                                     <option value="500000">Rp 500,000</option>
                                     <option value="750000">Rp 750,000</option>
@@ -373,9 +372,9 @@
                                     <option value="4750000">Rp 4,750,000</option>
                                     <option value="5000000">Rp 5,000,000</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control" id="usiamin" ng-model="usiamin">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="usiamin" ng-model="usiamin">
                                 <option value="">Usia (min)</option>
                                 <option>17</option>
                                 <option>18</option>
@@ -417,10 +416,10 @@
                                 <option>54</option>
                                 <option>55</option>
                             </select>
-                            </div>
-                            <div class="form-group">
-                                <!--<label for="sel1">Suku Asal:</label>-->
-                                <select class="form-control" id="suku" ng-model="input.suku">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label for="sel1">Suku Asal:</label>-->
+                                    <select class="form-control" id="suku" ng-model="input.suku">
                                 <option value="">Suku Asal</option>
                                 <option>Jawa</option>
                                 <option>Sunda</option>
@@ -433,21 +432,21 @@
                                 <option>Melayu</option>
                                 <option>Lainnya</option>
                             </select>
-                            </div> 
+                                </div>
 
-                        </div>
+                            </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <!--<label for="sel7">Jenis Kelamin:</label>-->
-                                <select class="form-control" id="gender" ng-model="input.gender">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <!--<label for="sel7">Jenis Kelamin:</label>-->
+                                    <select class="form-control" id="gender" ng-model="input.gender">
                                 <option value="">Jenis Kelamin</option>
                                 <option>Laki-laki</option>
                                 <option>Perempuan</option>
                             </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control" id="gajimax" ng-model="max">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="gajimax" ng-model="max">
                                     <option value="">Gaji Bulanan(max)</option>
                                     <option value="500000">Rp 500,000</option>
                                     <option value="750000">Rp 750,000</option>
@@ -484,10 +483,10 @@
                                     <option value="4750000">Rp 4,750,000</option>
                                     <option value="5000000">Rp 5,000,000</option>
                                 </select>
-                            </div>
-                             <div class="form-group">
-                                <!--<label for="sel2">Usia (max):</label>-->
-                                <select class="form-control" id="usiamax" ng-model="usiamax">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label for="sel2">Usia (max):</label>-->
+                                    <select class="form-control" id="usiamax" ng-model="usiamax">
                                 <option value="">Usia (max)</option>
                                 <option>17</option>
                                 <option>18</option>
@@ -529,22 +528,22 @@
                                 <option>54</option>
                                 <option>55</option>
                             </select>
-                            </div>
-                            <div class="form-group">
-                                <!--<label for="sel7">Pendidikan Terakhir:</label>-->
-                                <select class="form-control" id="pendidikan" ng-model="input.pendidikan">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label for="sel7">Pendidikan Terakhir:</label>-->
+                                    <select class="form-control" id="pendidikan" ng-model="input.pendidikan">
                                 <option value="">Pendidikan Terakhir</option>
                                 <option>SD</option>
                                 <option>SMP</option>
                                 <option>SMA</option>
                                 <option>Perguruan Tinggi</option>
                             </select>
-                            </div>                                                       
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-group">
-                                <!--<label for="sel7">Pengalaman (tahun):</label>-->
-                                <select class="form-control" id="exp" ng-model="input.exp">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <!--<label for="sel7">Pengalaman (tahun):</label>-->
+                                    <select class="form-control" id="exp" ng-model="input.exp">
                                 <option value="">Pengalaman (tahun)</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -567,18 +566,18 @@
                                 <option>19</option>
                                 <option>20</option>
                             </select>
-                            </div>
-                            <div class="form-group">
-                                <!--<label for="sel1">Waktu:</label>-->
-                                <select class="form-control" id="waktu" ng-model="input.waktu">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label for="sel1">Waktu:</label>-->
+                                    <select class="form-control" id="waktu" ng-model="input.waktu">
                                 <option value="">Waktu</option>
                                 <option>Menginap</option>
                                 <option>Infal</option>
                                 <option>Pulang-Pergi</option>
                             </select>
-                            </div>
-                             <div class="form-group">
-                                <select class="form-control" id="agama" ng-model="input.agama">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="agama" ng-model="input.agama">
                                 <option value="">Agama</option>
                                 <option>Islam</option>
                                 <option>Katolik</option>
@@ -587,86 +586,86 @@
                                 <option>Budha</option>
                                 <option>Lainnya</option>
                             </select>
-                            </div>
-                            <a class="btn btn-primary pull-right" ng-click="apply()">
-                                <span class="glyphicon glyphicon-refresh"></span> Reset
-                            </a>
-                            <input type="text" class="" id="tersedia" ng-model="input.tersedia" ng-init="input.tersedia='available'" hidden/>
-                            
-                        </div>
-                    
-                    </div>
-                </div>
-                <!-- ./filter -->
+                                </div>
+                                <a class="btn btn-primary pull-right" ng-click="apply()">
+                                    <span class="glyphicon glyphicon-refresh"></span> Reset
+                                </a>
+                                <input type="text" class="" id="tersedia" ng-model="input.tersedia" ng-init="input.tersedia='available'" hidden/>
 
-                <!--RESULTS-->
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3 style="font-family:proxima">Hasil Pencarian:</h3>
+                            </div>
+
+                        </div>
                     </div>
+                    <!-- ./filter -->
+
+                    <!--RESULTS-->
                     <div class="row">
-                        <div class="col-sm-1 pull-right">
-                            <select class="form-control" id="page" ng-model="pageSize">
+                        <div class="col-sm-4">
+                            <h3 style="font-family:proxima">Hasil Pencarian:</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pull-right">
+                                <select class="form-control" id="page" ng-model="pageSize">
                             <option>10</option>
                             <option>15</option>
                             <option>25</option>
                             <option>50</option>
                             </select>
-                        </div>
-                        <div class="pull-right">
-                            <label for="page">Items per Page: </label>
+                            </div>
+                            <div class="pull-right">
+                                <label for="page">Items per Page: </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="container">
-                    <div class="well well-lg" dir-paginate="data in datas | filter:{profesi: isi} | filter: gaji | filter:input | 
-                                                filter: usia | itemsPerPage: pageSize" current-page="currentPage">
-                        <div class="col-sm-2">
-                            <img ng-src="{{data.foto}}" class="image-responsive" alt="image" style="max-height:100px; max-width:150px" />
-                        </div>
-                        <div class="row" >
-                            <div class="col-sm-4">
-                                <a ng-click="viewProfile(data)" href="">
-                                    <p class="text-danger" style="text-transform: uppercase; font-size:18px"><strong>{{data.nama}}</strong></p>
-                                </a>
-                                <p>Gaji: {{ data.gajiNum | currency:"Rp. ":0}}</p>
-                                <p>Pengalaman : {{ data.exp }} tahun</p>
-                                <div class="panel-heading" style="padding:0px 0px; border-bottom: 0px">
-                                <span class="label label-default" style="font-size: 100%;" ng-repeat="ket in data.ketrampilan"> {{ ket.text }} </span>
-                                </div>
-                            </div>                                
 
-                            <div class="col-sm-3">
-                                <p class="title" style="font-size: 16px"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{data.lokasi}}
-                                </p>
-                                 <p class="title"><label ng-repeat="ket in data.profesi">{{ket + ',&nbsp'}}</label></p>
-                                 <p>Kelahiran: {{data.tanggal | date}}</p>
+                    <div class="container">
+                        <div class="well well-lg" dir-paginate="data in datas | filter:{profesi: isi} | filter: gaji | filter:input | 
+                                                filter: usia | itemsPerPage: pageSize" current-page="currentPage">
+                            <div class="col-sm-2">
+                                <img ng-src="{{data.foto}}" class="image-responsive" alt="image" style="max-height:100px; max-width:150px" />
                             </div>
-<br>
-                            <div class="col-sm-3">
-                                <button class="btn btn-danger btn-md" data-toggle="modal" data-target="#contactModal" ng-click="bookProfile(data)">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a ng-click="viewProfile(data)" href="">
+                                        <p class="text-danger" style="text-transform: uppercase; font-size:18px"><strong>{{data.nama}}</strong></p>
+                                    </a>
+                                    <p>Gaji: {{ data.gajiNum | currency:"Rp. ":0}}</p>
+                                    <p>Pengalaman : {{ data.exp }} tahun</p>
+                                    <div class="panel-heading" style="padding:0px 0px; border-bottom: 0px">
+                                        <span class="label label-default" style="font-size: 100%;" ng-repeat="ket in data.ketrampilan"> {{ ket.text }} </span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <p class="title" style="font-size: 16px"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{data.lokasi}}
+                                    </p>
+                                    <p class="title"><label ng-repeat="ket in data.profesi">{{ket + ',&nbsp'}}</label></p>
+                                    <p>Kelahiran: {{data.tanggal | date}}</p>
+                                </div>
+                                <br>
+                                <div class="col-sm-3">
+                                    <button class="btn btn-danger btn-md" data-toggle="modal" data-target="#contactModal" ng-click="bookProfile(data)">
                                 <span class="glyphicon glyphicon-plus-sign"></span> Book Pekerja!
                             </button>
-                                <br>
-                                <br>
-                                <button ng-click="viewProfile(data)" class="btn btn-primary btn-md">
+                                    <br>
+                                    <br>
+                                    <button ng-click="viewProfile(data)" class="btn btn-primary btn-md">
                                 <span class="glyphicon glyphicon-search"></span> Detail Pekerja
                             </button>
+                                </div>
+                                <br>
                             </div>
-                            <br>
                         </div>
                     </div>
-                </div>
-                <!-- ./RESULTS -->
+                    <!-- ./RESULTS -->
 
-                <!-- pagination -->
-                <div class="container">
-                    <div class="text-center">
-                        <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="./search/dirPagination.tpl.html"></dir-pagination-controls>
+                    <!-- pagination -->
+                    <div class="container">
+                        <div class="text-center">
+                            <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="./search/dirPagination.tpl.html"></dir-pagination-controls>
+                        </div>
                     </div>
-                </div>
-                <!-- ./pagination -->
+                    <!-- ./pagination -->
 
                 </div>
                 <!-- end of page content holder -->
@@ -674,7 +673,7 @@
             </div>
         </div>
         <!-- ./Filter and Results -->
-        
+
         <!-- How to Book -->
         <div class="page-content-wrap bg-texture-1 bg-dark light-elements">
 
@@ -743,7 +742,7 @@
             <div id="about" class="page-content-holder">
 
                 <div>
-                    <h2>About Us    <small> See what our clients have to say about our services! </small></h2>
+                    <h2>About Us <small> See what our clients have to say about our services! </small></h2>
                 </div>
 
                 <div class="row">
@@ -788,144 +787,19 @@
     </div>
     <!-- ./page content -->
 
-    <!-- page footer -->
-    <div class="page-footer">
-
-        <!-- page footer wrap -->
-        <div class="page-footer-wrap bg-dark-gray">
-            <!-- page footer holder -->
-            <div class="page-footer-holder page-footer-holder-main">
-
-                <div class="row">
-
-                    <!-- about -->
-                    <div class="col-md-3">
-                        <h3>About JobCenter.id</h3>
-                        <p>The premiere Indonesian worker search center. Use our search function to easily find the worker you
-                            need.
-                        </p>
-                    </div>
-                    <!-- ./about -->
-
-                    <!-- quick links -->
-                    <div class="col-md-3">
-                        <h3>Quick links</h3>
-
-                        <div class="list-links">
-                            <a ui-sref="home">Home</a>
-                            <a ui-sref="contact-us">Hubungi Kami</a>
-                        </div>
-                    </div>
-                    <!-- ./quick links -->
-
-                    <!-- recent tweets -->
-                    <!--<div class="col-md-3">
-                        <h3>Recent Tweets</h3>
-
-                        <div class="list-with-icon small">
-                            <div class="item">
-                                <div class="icon">
-                                    <span class="fa fa-twitter"></span>
-                                </div>
-                                <div class="text">
-                                    <a href="#">@JohnDoe</a> We found a nanny for our kids within a week!
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <span class="fa fa-twitter"></span>
-                                </div>
-                                <div class="text">
-                                    <a href="#">@Aqvatarius</a> Best service!
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <span class="fa fa-twitter"></span>
-                                </div>
-                                <div class="text">
-                                    <a href="#">@StrayDemon</a> Will use JobCenter's service again!
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>-->
-                    <!-- ./recent tweets -->
-
-                    <!-- contacts -->
-                    <div class="col-md-3">
-                        <h3>Contacts</h3>
-
-                        <div class="footer-contacts">
-                            <div class="fc-row">
-                                <span class="fa fa-home"></span>Head Office: Jl. WibawaMukti No. 46, Jatiluhur, Jatiasih,
-
-                                <br/>  Bekasi
-                            </div>
-                            <div class="fc-row">
-                                <span class="fa fa-phone"></span> 081282885731 / 087889276499
-
-                            </div>
-                            <div class="fc-row">
-                                <span class="fa fa-envelope"></span>
-                                <strong>Yusuf Satria</strong>
-                                <br>
-                                <a href="mailto:#">admin@jobcenter.id</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!-- ./contacts -->
-
-                </div>
-
-            </div>
-            <!-- ./page footer holder -->
-        </div>
-        <!-- ./page footer wrap -->
-
-        <!-- page footer wrap -->
-        <div class="page-footer-wrap bg-darken-gray">
-            <!-- page footer holder -->
-            <div class="page-footer-holder">
-
-                <!-- copyright -->
-                <div class="copyright">
-                    &copy; 2016 JobCenter.id - All Rights Reserved
-                </div>
-                <!-- ./copyright -->
-
-                <!-- social links -->
-                <div class="social-links">
-                    <a href="#"><span class="fa fa-facebook"></span></a>
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-google-plus"></span></a>
-                    <a href="#"><span class="fa fa-linkedin"></span></a>
-                </div>
-                <!-- ./social links -->
-
-            </div>
-            <!-- ./page footer holder -->
-        </div>
-        <!-- ./page footer wrap -->
-
-    </div>
-    <!-- ./page footer -->
-    
     <!-- Modal -->
     <div id="contactModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" >
+                <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <!--<h4 class="modal-title">Hubungi Kami</h4>-->
-                     <h4 class="modal-title">Book <span class="text-danger"> {{data.nama}}</span> Sekarang Juga!</h4>
-                     <h5 class="modal-title" >Lokasi di <strong>{{data.lokasi}}</strong></h5>
-                     
-                                     
+                    <h4 class="modal-title">Book <span class="text-danger"> {{data.nama}}</span> Sekarang Juga!</h4>
+                    <h5 class="modal-title">Lokasi di <strong>{{data.lokasi}}</strong></h5>
+
+
                 </div>
                 <div class="modal-body">
                     <div class="alert alert-danger" ng-show="notValid">
@@ -936,7 +810,7 @@
                     <form name="userForm" novalidate>
                         <select id="lokasi" hidden>
                             <option ng-selected="branch.kotamadya == data.lokasi" ng-repeat="branch in branches | filter: {kotamadya: data.lokasi}" ng-value="branch.email">{{branch.email}}</option>
-                        </select> 
+                        </select>
                         <!-- NAME -->
                         <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
                             <label>Name</label>
@@ -959,10 +833,10 @@
                         </div>
 
                         <!-- COMMENT -->
-                        <div class="form-group" >
+                        <div class="form-group">
                             <label>Permintaan</label>
                             <textarea type="text" name="comment" class="form-control" ng-model="user.comment" ng-maxlength="200" placeholder="Isi permintaan anda disini"
-                               ng-init="user.comment=null" ></textarea>
+                                ng-init="user.comment=null"></textarea>
                             <p ng-show="userForm.comment.$error.minlength" class="help-block">Isi permintaan anda.</p>
                             <p ng-show="userForm.comment.$error.maxlength" class="help-block">Isi permintaan terlalu panjang. (Maksimum 200 karakter)</p>
                         </div>
@@ -974,7 +848,9 @@
                         <button ng-disabled="!term" type="submit" class="btn btn-primary" ng-click="submitForm()">Submit</button>
                         <br>
                         <br>
-                        <p> NOTE: Anda akan dihubungi oleh admin kami untuk mengatur jadwal meeting dengan pekerja yang anda pilih.</p>
+                        <p> NOTE: Anda akan dihubungi oleh admin kami untuk mengatur jadwal meeting dengan pekerja yang anda
+                            pilih.
+                        </p>
                         <p> Terima kasih telah menggunakan JobCenter.id </p>
                     </form>
                 </div>
@@ -987,5 +863,9 @@
     </div>
     <!-- ./Modal -->
     
+    <!-- page footer -->
+    <footer-main></footer-main>
+    <!-- ./page footer -->
+
 </div>
 <!-- ./page container -->

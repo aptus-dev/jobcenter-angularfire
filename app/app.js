@@ -25,7 +25,6 @@ angular
       })
       .state('underconstruction', {
         url: '/underconstruction',
-        //controller: 'searchController',
         templateUrl: 'views/undercons.html'
       })
       .state('home-en', {
@@ -36,7 +35,6 @@ angular
       .state('contact-us', {
         url: '/contact-us',
         templateUrl: 'views/contact-us.html',
-        //controller: 'branchViewController'
       })
       .state('homie', {
         url: '/:workerId',
