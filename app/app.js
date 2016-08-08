@@ -36,6 +36,11 @@ angular
         url: '/contact-us',
         templateUrl: 'views/contact-us.html',
       })
+
+      .state('daftar', {
+        url: '/daftar',
+        templateUrl: 'views/daftar.html',
+      })
       .state('homie', {
         url: '/:workerId',
         templateUrl: 'views/home.html',

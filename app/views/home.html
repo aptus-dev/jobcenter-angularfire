@@ -40,12 +40,7 @@
                                 </li>
                             </ul>
                         </li>
-
-
-
-                        <!--<li><a ui-sref="search">Cari Pekerja</a></li>-->
                     </ul>
-
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -96,9 +91,8 @@
                             <h1>Anda Ingin Mencari Pekerja?</h1>
                             <p class="lead">Hubungi Kami Langsung atau Cari Daftar Pekerja Kami!</p>
                             <button class="btn btn-primary" ui-sref="contact-us">Hubungi Kami</button> &nbsp &nbsp
-                            <button class="btn btn-primary" ui-sref="home({ '#': 'tipe' })" ng-click="redirect($event)">Pilih Kategori Pekerja</button>                            &nbsp &nbsp
-                            <!--<button class="btn btn-default" ng-click="test()">Test Pagination</button> &nbsp &nbsp
-                            <input type="text" class="form-control" ng-model="tes">-->
+                            <button class="btn btn-primary" ui-sref="home({ '#': 'tipe' })" ng-click="redirect($event)">Pilih Kategori Pekerja</button>
+                            <br><button class="btn btn-primary" ui-sref="daftar" style="width: 50%;margin-right: 1px;">Daftar Sebagai Pekerja</button>              
                         </div>
                     </div>
                 </div>
@@ -114,10 +108,7 @@
                     <div class="block-heading-text">
                         Berikut adalah beberapa jenis pekerjaan yang kami sediakan
                     </div>
-                    <br>
-                    <!--<div class="block-heading-text">
-                        Anda dapat menemukan pekerja professional untuk jasa-jasa ini. 
-                    </div>-->
+                    <br>                   
                     <br>
                     <br>
                     <div class="row">
@@ -239,6 +230,44 @@
                             </div>
                         </div>
                     </div>
+					
+					<div class="row">
+                        <div class="col-md-2 col-md-offset-1">
+                            <div class="text-column text-column-centralized tex-column-icon-lg">
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 ">
+                            <div class="text-column text-column-centralized tex-column-icon-lg">
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 ">
+                            <div class="text-column text-column-centralized tex-column-icon-lg">
+                                <a ui-sref="home({ '#': 'search' })" ng-click="redirectFilterSPG($event)">
+                                    <div class="text-column-icon">
+                                        <span class="fa icon-suster"></span>
+                                    </div>
+                                    <br>
+                                    <p style="color: #002b80; font-size: 25px;"><strong>SPG/SPB</strong></p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 ">
+                            <div class="text-column text-column-centralized tex-column-icon-lg">
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 ">
+                            <div class="text-column text-column-centralized tex-column-icon-lg">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- ./page content holder -->
@@ -253,17 +282,16 @@
                     <div class="box"><span class="fa fa-angle-down"></span></div>
 
                 </div>
-
                 <div class="page-content-holder" id="search">
                     <!-- LOKASI -->
                     <div class="text-center">
                         <h3>Anda Mencari: <span ng-model="input.profesi" style="color:#00003B">{{input.profesi}}</span></h3>
                         <h1 class="heading-underline">Dimanakah Anda Berada?</h1>
                         <select class="btn" style="background-color: #353831; border-color: #00003B; color: #FFFF03; padding:12px; font-size:20px"
-                            ng-model="input.lokasi">
-                    <option value="">Pilih Lokasi Anda</option>
-                    <option ng-repeat="branch in branches">{{branch.kotamadya}}</option>
-                </select>
+                                ng-model="input.lokasi">
+                            <option value="">Pilih Lokasi Anda</option>
+                            <option ng-repeat="branch in branches">{{branch.kotamadya}}</option>
+                        </select>
                     </div>
                     <br>
 
@@ -319,6 +347,8 @@
                                 Nanny / Perawat Orang Sakit  &nbsp</label>
                                     <label><input type="checkbox" ng-model="isi.value10" ng-true-value="'Pekerja Umum'" ng-false-value="">
                                 Pekerja Umum  &nbsp</label>
+								<label><input type="checkbox" ng-model="isi.value11" ng-true-value="'SPG'" ng-false-value="">
+                                SPG &nbsp</label>
                                 </div>
                             </div>
 
