@@ -63,14 +63,14 @@
         <!-- Carousel slider -->
         <div class="banner-container">
             <div id="myCarousel" class="carousel slide">
-                <div class="item" style="background: url(./img/backgrounds/LP3.jpg) no-repeat left center; background-size: cover;">
+                <div class="item" style="background: url(./img/backgrounds/LP1res.jpg) no-repeat left center; background-size: cover;">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Looking For Hired Help?</h1>
-                            <p class="lead">Contact one of our branches or search through our database.</p>
+                            <h1>Looking For a Job?</h1>
+                            <p class="lead">Contact us now or apply online!</p>
                             <button class="btn btn-primary" ui-sref="contact-us">Contact Us</button> &nbsp &nbsp
-                            <button class="btn btn-primary" ui-sref="home-en({ '#': 'tipe' })" ng-click="redirecten($event)">Choose Worker Category</button>
-                            <br><button class="btn btn-primary" ui-sref="daftar" style="width: 50%;margin-right: 1px;">Register as a Worker</button>
+                            <!--  <button class="btn btn-primary" ui-sref="home-en({ '#': 'tipe' })" ng-click="redirecten($event)">Choose Worker Category</button>----->
+                            <button class="btn btn-primary" ui-sref="daftar">Apply Online</button>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
         <!-- ./carousel -->
 
         <!-- Icon Category -->
-        <div class="page-content-wrap bg-img-1" id="tipe">
+        <div class="page-content-wrap bg-img-1" id="tipe" hidden>
             <div class="page-content-holder">
                 <div class="block-heading block-heading-centralized">
                     <h1 class="heading-underline">Search Based on Profession</h1>
@@ -253,7 +253,7 @@
         <!-- ./Icon Category -->
 
         <!-- Filter and Results -->
-        <div class="page-content-wrap bg-texture-1 bg-light dark-elements">
+        <div class="page-content-wrap bg-texture-1 bg-light dark-elements" hidden>
             <div class="page-content-wrap">
 
                 <div class="divider">
@@ -680,7 +680,7 @@
         <!-- ./Filter and Results -->
 
         <!-- How to Book -->
-        <div class="page-content-wrap bg-texture-1 bg-dark light-elements">
+        <div class="page-content-wrap bg-img-1 bg-light dark-elements" >
 
             <div class="divider">
                 <div class="box"><span class="fa fa-angle-down"></span></div>
@@ -688,41 +688,40 @@
 
             <!-- page content holder -->
             <div class="page-content-holder">
+                <div class="row ">
 
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="text-column text-column-centralized tex-column-icon-lg">
-                            <div class="text-column-icon">
-                                <span class="fa icons-search" style="font-family:icomoon; font-size:350%"></span>
+                    <div class="col-md-4 ">
+                        <div class="text-column text-column-centralized tex-column-icon-lg ">
+                            <div class="text-column-icon ">
+                                <span class="fa icons-search " style="font-family:icomoon; font-size:350% "></span>
                             </div>
-                            <h4><strong>SEARCH</strong></h4>
-                            <div class="text-column-info">
+                            <h4><strong style="color:#00003B">SEARCH</strong></h4>
+                            <div class="text-column-info" style="color:#222222">
                                 Use our search function to find your preferred worker. Choose the type of worker and the location you need.
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="text-column text-column-centralized tex-column-icon-lg">
-                            <div class="text-column-icon">
-                                <span class="fa icons-cal" style="font-family:icomoon; font-size:350%"></span>
+                    <div class="col-md-4 ">
+                        <div class="text-column text-column-centralized tex-column-icon-lg ">
+                            <div class="text-column-icon ">
+                                <span class="fa icons-cal " style="font-family:icomoon; font-size:350% "></span>
                             </div>
-                            <h4><strong>BOOK</strong></h4>
-                            <div class="text-column-info">
-                                Once you have found the worker you like, click the "Book Worker" button and fill the form. One of our administrators will
+                            <h4><strong style="color:#00003B">BOOK</strong></h4>
+                            <div class="text-column-info" style="color:#222222">
+                                Once you have found the worker you like, click the "Book Worker " button and fill the form. One of our administrators will
                                 contact you and set up an interview date.
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="text-column text-column-centralized tex-column-icon-lg">
-                            <div class="text-column-icon">
-                                <span class="fa icons-int" style="font-family:icomoon; font-size:350%"></span>
+                    <div class="col-md-4 ">
+                        <div class="text-column text-column-centralized tex-column-icon-lg ">
+                            <div class="text-column-icon ">
+                                <span class="fa icons-int " style="font-family:icomoon; font-size:350% "></span>
                             </div>
-                            <h4><strong>INTERVIEW</strong></h4>
-                            <div class="text-column-info">
+                            <h4><strong style="color:#00003B">INTERVIEW</strong></h4>
+                            <div class="text-column-info" style="color:#222222">
                                 Interview with your worker will take place in our branch office. If you're satisfied with the worker we can schedule another
                                 interview with another one.
                             </div>
@@ -737,21 +736,21 @@
         <!-- ./How to Book -->
 
         <!-- About us -->
-        <div class="page-content-wrap bg-light bg-texture-1">
+        <div class="page-content-wrap bg-light bg-texture-1 " hidden>
 
-            <div class="divider">
-                <div class="box"><span class="fa fa-angle-down"></span></div>
+            <div class="divider ">
+                <div class="box "><span class="fa fa-angle-down "></span></div>
             </div>
 
             <!-- page content holder -->
-            <div id="about" class="page-content-holder">
+            <div id="about " class="page-content-holder ">
 
                 <div>
                     <h2>About Us <small> See what our clients have to say about our services! </small></h2>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row ">
+                    <div class="col-lg-4 ">
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper, quam porttitor iaculis
                                 semper, mi enim venenatis ligula, vel dictum lorem est suscipit nibh. Fusce pulvinar sodales
@@ -760,7 +759,7 @@
                             <footer>John Doe</footer>
                         </blockquote>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <blockquote>
                             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce
                                 rhoncus elit ac nisl hendrerit mattis. Donec tempor urna eros, sed pulvinar purus consectetur
@@ -768,7 +767,7 @@
                             <footer>Jane Doe</footer>
                         </blockquote>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <blockquote>
                             <p>Nunc ullamcorper risus vitae sem posuere pretium. Sed molestie diam commodo, placerat nulla sit
                                 amet, fermentum nisl. In quis justo vel nunc blandit ullamcorper ac a ex. </p>
@@ -783,7 +782,7 @@
         <!-- ./About Us -->
 
         <!-- page content wrapper -->
-        <div class="page-content-wrap bg-light">
+        <div class="page-content-wrap bg-light ">
             <!-- page content holder -->
 
             <!-- ./page content holder -->
@@ -793,70 +792,80 @@
     <!-- ./page content -->
 
     <!-- Modal -->
-    <div id="contactModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+    <div id="contactModal " class="modal fade " role="dialog ">
+        <div class="modal-dialog ">
 
             <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <!--<h4 class="modal-title">Hubungi Kami</h4>-->
-                    <h4 class="modal-title">Book <span class="text-danger"> {{data.nama}}</span> Now!</h4>
-                    <h5 class="modal-title">Location in <strong>{{data.lokasi}}</strong></h5>
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                    <!--<h4 class="modal-title ">Hubungi Kami</h4>-->
+                    <h4 class="modal-title ">Book <span class="text-danger "> {{data.nama}}</span> Now!</h4>
+                    <h5 class="modal-title ">Location in <strong>{{data.lokasi}}</strong></h5>
                 </div>
-                <div class="modal-body">
-                    <div class="alert alert-danger" ng-show="notValid">
+                <div class="modal-body ">
+                    <div class="alert alert-danger " ng-show="notValid ">
                         <span>Please Complete the Form!</span>
                     </div>
                     <!-- ANGULAR VALIDATION FORM ============ -->
 
-                    <form name="userForm" novalidate>
-                        <select id="lokasi" hidden>
-                            <option ng-selected="branch.kotamadya == data.lokasi" ng-repeat="branch in branches | filter: {kotamadya: data.lokasi}" ng-value="branch.email">{{branch.email}}</option>
+                    <form name="userForm " novalidate>
+                        <select id="lokasi " hidden>
+                            <option ng-selected="branch.kotamadya==d ata.lokasi " ng-repeat="branch in branches | filter:
+                {kotamadya: data.lokasi} " ng-value="branch.email ">{{branch.email}}</option>
                         </select>
                         <!-- NAME -->
-                        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                        <div class="form-group " ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine
+                } ">
                             <label>Name</label>
-                            <input type="text" name="name" class="form-control" ng-model="user.name" placeholder="Nama lengkap anda" required>
-                            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Please Enter Your Full Name</p>
+                            <input type="text " name="name " class="form-control " ng-model="user.name " placeholder="Nama
+                lengkap anda " required>
+                            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine " class="help-block ">Please Enter Your Full Name</p>
                         </div>
 
                         <!-- EMAIL -->
-                        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                        <div class="form-group " ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine
+                } ">
                             <label>Email</label>
-                            <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="nama@domainemail.com" required>
-                            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Please Enter Your Email</p>
+                            <input type="email " name="email " class="form-control " ng-model="user.email
+                " placeholder="nama@domainemail.com " required>
+                            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine " class="help-block ">Please Enter Your Email</p>
                         </div>
 
                         <!-- CONTACT -->
-                        <div class="form-group" ng-class="{ 'has-error' : userForm.contact.$invalid && !userForm.contact.$pristine }">
+                        <div class="form-group " ng-class="{ 'has-error' : userForm.contact.$invalid && !userForm.contact.$pristine
+                } ">
                             <label>Phone Number</label>
-                            <input type="number" name="contact" class="form-control" ng-model="user.contact" placeholder="021 123123" required>
-                            <p ng-show="userForm.contact.$invalid && !userForm.contact.$pristine" class="help-block">Please Enter Your Phone Number</p>
+                            <input type="number " name="contact " class="form-control " ng-model="user.contact
+                " placeholder="021 123123 " required>
+                            <p ng-show="userForm.contact.$invalid && !userForm.contact.$pristine " class="help-block ">Please Enter Your Phone Number</p>
                         </div>
 
                         <!-- COMMENT -->
-                        <div class="form-group" ng-class="{ 'has-error' : userForm.comment.$invalid && !userForm.comment.$pristine }">
+                        <div class="form-group " ng-class="{ 'has-error' : userForm.comment.$invalid && !userForm.comment.$pristine
+                } ">
                             <label>Additional Request</label>
-                            <textarea type="text" name="comment" class="form-control" ng-model="user.comment" ng-minlength="3" ng-maxlength="200" placeholder="Isi permintaan anda disini"
-                                ng-init="user.comment=null"></textarea>
-                            <p ng-show="userForm.comment.$error.minlength" class="help-block">Please Fill in Your Request</p>
-                            <p ng-show="userForm.comment.$error.maxlength" class="help-block">Your request is exceed the maximum character of 200.</p>
+                            <textarea type="text " name="comment " class="form-control " ng-model="user.comment
+                " ng-minlength="3 " ng-maxlength="200 " placeholder="Isi permintaan anda disini "
+                                ng-init="user.comment=null "></textarea>
+                            <p ng-show="userForm.comment.$error.minlength " class="help-block ">Please Fill in Your Request</p>
+                            <p ng-show="userForm.comment.$error.maxlength " class="help-block ">Your request is exceed the maximum character of 200.</p>
                         </div>
 
-                        <ul id="check-box-list" class="list-group checked-list-box">
-                            <div class="checkbox"><label><input type="checkbox" ng-model="term">I Accept the </label> <a href="/terms" style="color: #F2071F">Terms & Conditions</a></div>
+                        <ul id="check-box-list " class="list-group checked-list-box ">
+                            <div class="checkbox "><label><input type="checkbox " ng-model="term
+                ">I Accept the </label> <a href="/terms " style="color: #F2071F ">Terms & Conditions</a></div>
                         </ul>
 
-                        <button ng-disabled="!term" type="submit" class="btn btn-primary" ng-click="submitForm()">Submit</button>
+                        <button ng-disabled="!term " type="submit " class="btn btn-primary " ng-click="submitForm() ">Submit</button>
                         <br>
                         <br>
                         <p> NOTE: You will be contacted by our administrators to set an interview date as soon as possible. </p>
                         <p> Thank you for using JobCenter.id </p>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-default " data-dismiss="modal ">Cancel</button>
                 </div>
             </div>
 
