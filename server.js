@@ -49,7 +49,7 @@ app.post('/contact', function(req, res) {
         secure: true, // use SSL
         auth: {
             user: 'admin@jobcenter.id',
-            pass: 'whosyourdaddy'
+            pass: 'blokf12no17'
             }
     });
         
